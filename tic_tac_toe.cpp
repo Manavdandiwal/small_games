@@ -61,9 +61,15 @@ void print_table(char arr[N][N])
     {
         for (int j = 0; j < N; j++)
         {
-            cout << arr[i][j] << " | ";
+            cout << arr[i][j];
+
+            if(j!=2)
+            cout<<" | ";
         }
         cout << "\b\b" << endl;
+
+        if (i != 2)
+            cout << "-----------" << endl;
     }
 }
 
